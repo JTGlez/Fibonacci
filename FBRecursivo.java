@@ -1,8 +1,8 @@
 public class FBRecursivo {
 
-    private int[] valores = new int[100];
+    private double[] valores = new double[100000];
 
-    public int calcular(int n) {
+    public double calcular(int n) {
 
         //Caso base.
         if (n == 0) {
@@ -19,7 +19,7 @@ public class FBRecursivo {
         //Caso recursivo.
         } else {
 
-            int calculo = calcular(n - 1) + calcular(n - 2);
+            double calculo = calcular(n - 1) + calcular(n - 2);
             valores[n] = calculo;
             System.out.println("Actual: " + calculo);
             return calculo;

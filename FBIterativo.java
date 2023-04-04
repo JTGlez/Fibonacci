@@ -1,7 +1,7 @@
 public class FBIterativo {
 
 
-    public int calcular(int n){
+    public double calcular(int n){
 
         //Caso base.
         if (n == 0) {
@@ -14,9 +14,9 @@ public class FBIterativo {
         //Ciclo for.
         } else {
 
-            int x = 0;
-            int y = 1;
-            int calculo = 0;
+            double x = 0;
+            double y = 1;
+            double calculo = 0;
 
             for (int i = 2; i <= n; i++) {
                 calculo = x + y;
