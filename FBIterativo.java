@@ -1,6 +1,5 @@
 public class FBIterativo {
 
-
     public double calcular(int n){
 
         //Caso base.
@@ -22,7 +21,6 @@ public class FBIterativo {
                 calculo = x + y;
                 x = y;
                 y = calculo;
-                System.out.println("Actual: " + y);
             }
             return calculo;
         }
